@@ -1,20 +1,46 @@
-// integer_comparison.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// integer_comparison.cpp : Question 4 chapter 2
 
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //variables
+    int val1 = 0;
+    int val2 = 0;
+    int smallest = 0;
+    int larger = 0;
+    int sum = 0;
+    int diff = 0;
+    int product = 0;
+    double ratio = 0;
+
+    std::cout << "Please enter two integer values below, such as 6 or 7\n"
+        << "integer one: ";
+    std::cin >> val1;
+    std::cout << "integer two: ";
+    std::cin >> val2;
+
+    if (val1 < val2) {
+        smallest = val1;
+        larger = val2;
+    }
+    else {
+        smallest = val2;
+        larger = val1;
+    }
+
+    //calculations of sum, difference, product and ratio
+    sum = val1 + val2;
+    diff = val1 - val2;
+    product = val1 * val2;
+    ratio = val1 / val2;
+
+    std::cout << "See below comparison of your integers:\n"
+        << "The smallest integer is " << smallest << "\n"
+        << "The largest integer is " << larger << "\n"
+        << "The sum of the two integers is " << sum << "\n"
+        << "The difference between the two integers is " << diff << "\n"
+        << "The product of the two integers is " << product << "\n"
+        << "The ratio of the two integers is " << ratio << "\n";
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
